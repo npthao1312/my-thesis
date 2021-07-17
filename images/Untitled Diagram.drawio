@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-17T17:50:03.811Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="I3gxY-tkwJNshMRvY7OM" version="14.8.5" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-07-17T18:18:04.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="WP_UvofEFne8MAgCwqGz" version="14.8.5" type="github" pages="6">
   <diagram id="NPSHvd_kSki1qHI0-w2j" name="Manage Folders">
     <mxGraphModel dx="1038" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -840,31 +840,174 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Nqd36TcVV44JOhHk1N4b" name="C3">
-    <mxGraphModel dx="1038" dy="2296" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+  <diagram id="EwG-GDksTLrE4CXTCjf6" name="C3">
+    <mxGraphModel dx="4287" dy="3572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
-        <mxCell id="slKSWyr1uSO3ezSHGqyY-0" />
-        <mxCell id="slKSWyr1uSO3ezSHGqyY-1" parent="slKSWyr1uSO3ezSHGqyY-0" />
-        <object placeholders="1" c4Type="Database" c4Technology="MySQL" c4Description="Store user registration information hashed authentication credentials, access to files and folders..." label="%c4Type%&lt;div&gt;[Container:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="NMO5Q7KqNfZY-GlfS2WL-0">
-          <mxCell style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#438DD5;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#3C7FC0;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};" vertex="1" parent="slKSWyr1uSO3ezSHGqyY-1">
-            <mxGeometry x="40" y="-879.9999999999999" width="200" height="175" as="geometry" />
+        <mxCell id="G5dXMZOh173PLr_mvd9P-0" />
+        <mxCell id="G5dXMZOh173PLr_mvd9P-1" parent="G5dXMZOh173PLr_mvd9P-0" />
+        <object placeholders="1" c4Name="API Backend" c4Type="ExecutionEnvironment" c4Application="Container" label="&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-8">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#ffffff;fontColor=#000000;align=left;arcSize=5;strokeColor=#000000;verticalAlign=bottom;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="-510" y="-1380" width="1830" height="490" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="NMO5Q7KqNfZY-GlfS2WL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="slKSWyr1uSO3ezSHGqyY-1" source="NMO5Q7KqNfZY-GlfS2WL-4">
+        <object placeholders="1" c4Type="Database" c4Technology="MySQL" c4Description="Store user registration information hashed authentication credentials, access to files and folders..." label="%c4Type%&lt;div&gt;[Container:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-2">
+          <mxCell style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#438DD5;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#3C7FC0;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="343.63" y="-810" width="200" height="175" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Dashboard" c4Type="Container" c4Technology="JavaScript and ReactJS" c4Description="Provides all of the functionality via a web browser" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#438DD5;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3C7FC0;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="340" y="-1690" width="230" height="158.13" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-5">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-4" target="G5dXMZOh173PLr_mvd9P-11">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="390" y="-1534.87" as="sourcePoint" />
+              <mxPoint x="650" y="-1489.7409016393444" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JDBC" c4Description="Read from and writes to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-6">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-8" target="G5dXMZOh173PLr_mvd9P-2">
+            <mxGeometry width="160" relative="1" as="geometry">
+              <mxPoint x="760" y="-1345.75" as="sourcePoint" />
+              <mxPoint x="800" y="-1420" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Security Component" c4Type="Component" c4Technology="Spring Security" c4Description="Provides functionality related to signing in, granting permission,..." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-10">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="340" y="-1100" width="203.63" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-11" target="G5dXMZOh173PLr_mvd9P-10">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="490" y="-1506.245" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-350" y="-1030" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Name="Dashboard" c4Type="Container" c4Technology="JavaScript and ReactJS" c4Description="Provides all of the functionality via a web browser" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="NMO5Q7KqNfZY-GlfS2WL-4">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#438DD5;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3C7FC0;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="slKSWyr1uSO3ezSHGqyY-1">
-            <mxGeometry x="274" y="-1730" width="230" height="158.13" as="geometry" />
+        <object placeholders="1" c4Name="Authentication Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Allow users to authenticate " label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-11">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="-450" y="-1340" width="200" height="137.5" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="NMO5Q7KqNfZY-GlfS2WL-5" value="&lt;b&gt;Make API calls to [JSON/HTTP]&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="slKSWyr1uSO3ezSHGqyY-1">
-          <mxGeometry x="190" y="-1540" width="190" height="20" as="geometry" />
+        <mxCell id="G5dXMZOh173PLr_mvd9P-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-12" target="G5dXMZOh173PLr_mvd9P-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-45" y="-1030" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="NMO5Q7KqNfZY-GlfS2WL-6" value="&lt;b&gt;Read from and writes to [JDBC]&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;rotation=0;" vertex="1" parent="slKSWyr1uSO3ezSHGqyY-1">
-          <mxGeometry x="50" y="-930" width="200" height="20" as="geometry" />
+        <object placeholders="1" c4Name="User Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Provide users with a summary of their account. Allow Admin to manage users" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-12">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="-147" y="-1340" width="203.64" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-13" target="G5dXMZOh173PLr_mvd9P-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Group Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Allow Admin to manage user groups." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-13">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="157" y="-1340" width="203.64" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-14" target="G5dXMZOh173PLr_mvd9P-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Folder Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Allow User to manage folders." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-14">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="461" y="-1340" width="203.64" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-15" target="G5dXMZOh173PLr_mvd9P-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="868" y="-1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="File Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Allow User to manage files." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-15">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="766" y="-1340" width="203.64" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-16" target="G5dXMZOh173PLr_mvd9P-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1172" y="-1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="ACL Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Allow User to manage ACLs." label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;%c4Description%&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-16">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#85BBF0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#78A8D8;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+            <mxGeometry x="1070" y="-1340" width="203.64" height="140" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-17">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-4" target="G5dXMZOh173PLr_mvd9P-12">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="430" y="-1510" as="sourcePoint" />
+              <mxPoint x="-259.9999999999998" y="-1277.77" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-18">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-4" target="G5dXMZOh173PLr_mvd9P-13">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="521.4100000000001" y="-1450" as="sourcePoint" />
+              <mxPoint x="-3.7699999999998397" y="-1280" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-19">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" target="G5dXMZOh173PLr_mvd9P-14">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="450" y="-1530" as="sourcePoint" />
+              <mxPoint x="420.00000000000017" y="-1298.13" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-20">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-4" target="G5dXMZOh173PLr_mvd9P-15">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="460" y="-1520" as="sourcePoint" />
+              <mxPoint x="572.8200000000002" y="-1330" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Technology="JSON/HTTP" c4Description="Make API calls to" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;[%c4Technology%]&lt;/div&gt;&lt;/div&gt;" id="G5dXMZOh173PLr_mvd9P-21">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;dashed=1;metaEdit=1;metaData={&quot;c4Type&quot;:{&quot;editable&quot;:false}};startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="G5dXMZOh173PLr_mvd9P-1" source="G5dXMZOh173PLr_mvd9P-4" target="G5dXMZOh173PLr_mvd9P-16">
+            <mxGeometry x="-0.125" width="160" relative="1" as="geometry">
+              <mxPoint x="850" y="-1600" as="sourcePoint" />
+              <mxPoint x="962.8200000000002" y="-1410" as="targetPoint" />
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-33" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="260" y="-1140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-35" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="-40" y="-1140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-36" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="-350" y="-1140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-37" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="561" y="-1140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-38" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="870" y="-1140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G5dXMZOh173PLr_mvd9P-39" value="Uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G5dXMZOh173PLr_mvd9P-1">
+          <mxGeometry x="1179" y="-1140" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,0 +1,20 @@
+title Manage User Groups - Update Group Sub Flow Sequence Diagram
+
+actor Admin
+boundary ManageGroups
+control GroupController
+entity Group
+
+Admin -> ManageGroups: 6. request update group()
+ManageGroups-->>Admin: request form
+Admin->ManageGroups:7. enter information()
+ManageGroups->ManageGroups:7.1 retrieve group details (id)
+alt Group existed
+ManageGroups-->>Admin: group details and all users's username
+Admin->ManageGroups:8. update group (information)
+ManageGroups->GroupController:8.1 update group (information)
+GroupController->Group: 8.1.1 update (information)
+else Group not existed
+ManageGroups-->>Admin: error message
+end
+

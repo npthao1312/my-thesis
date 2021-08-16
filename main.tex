@@ -8,29 +8,35 @@
 \usepackage{graphicx} % Include images in LaTeX
 \usepackage{color} % Coloring text
 \usepackage{enumerate}
+\usepackage{titletoc}
 \usepackage{float} % Allow you to use [H] specifier to force the position of the images 
 \usepackage{capt-of} % Defines a command \captionof for putting a caption to something that’s not a float.
 \usepackage{sidecap} % Defines environments called SCfigure and SCtable (analogous to figure and table) to typeset captions sideways
-	\sidecaptionvpos{figure}{c} % Alignment
+\sidecaptionvpos{figure}{c} % Alignment
 \usepackage{caption} % to customize the captions in floating environments like figure and table
 \usepackage{commath} % Mathematics typesetting support
 \usepackage{cancel} % Place lines through maths formulae
 \usepackage{anysize} % to set up document margins
-%\marginsize{2cm}{2cm}{2cm}{2cm} % Left, right, up, down
-%\usepackage[top=2cm,bottom=4cm,left=1.5cm,right=3cm,asymmetric]{geometry}
+\marginsize{3.5cm}{2cm}{2.54cm}{2.54cm} % Left, right, up, down
+\usepackage{wrapfig}
+% \usepackage[top=2.54cm,bottom=2.54cm,left=3.5cm,right=2cm]{geometry}
 \usepackage{appendix} %Extra control of appendices
 \usepackage{tocbibind}
-
+\usepackage{colortbl}
 
 %EXTRA PACKAGES
+\usepackage{indentfirst}
 \usepackage{multirow}
-\usepackage{glossaries}
+\usepackage[toc, acronym]{glossaries}
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{enumitem}
 \usepackage{enumerate}
 \usepackage{changepage}
 \usepackage{alltt}
 \usepackage{listings}
+\usepackage{longtable,lscape}
 \usepackage{lmodern}
 \usepackage{gensymb}
 \usepackage{caption}
@@ -51,6 +57,7 @@
 \definecolor{blue}{rgb}{0,0,0.6}
 \definecolor{green}{rgb}{0,0.8,0}
 \definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{gray}{rgb}{0.753,0.753,0.753}
 
 \lstset{
 language=csh,
@@ -65,10 +72,6 @@ frame=b,
 stringstyle=\color{blue}\ttfamily,
 showspaces=false,
 showtabs=false,
-xleftmargin=17pt,
-framexleftmargin=17pt,
-framexrightmargin=5pt,
-framexbottommargin=4pt,
 commentstyle=\color{green},
 morecomment=[l]{//}, %use comment-line-style!
 morecomment=[s]{/*}{*/}, %for multiline comments
@@ -111,6 +114,8 @@ backgroundcolor=\color{white},
 \setlength{\oddsidemargin}{0.125in}
 \setlength{\evensidemargin}{0.125in}
 \setlength{\textwidth}{6.375in}
+\setlength{\parindent}{1em}
+\setlength{\tabcolsep}{18pt}
 \raggedbottom
 
 
@@ -131,7 +136,7 @@ backgroundcolor=\color{white},
 %%% Put your local definitions here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % For example,
 \newcommand{\R}{\mathbb{R}}
-
+\let\cleardoublepage\clearpage
 
 % Header and Footer
 \usepackage{fancyhdr} 
@@ -140,7 +145,7 @@ backgroundcolor=\color{white},
 \fancyhead[L]{\footnotesize University of Science and Technology of Hanoi} 
 \fancyfoot[R]{\footnotesize Bachelor Thesis}  
 \fancyfoot[C]{\thepage}  % center
-\fancyfoot[L]{\footnotesize Information and communications technology}  %left
+\fancyfoot[L]{\footnotesize Information and Communications Technology}  %left
 \renewcommand{\footrulewidth}{0.4pt}
 \fancypagestyle{firststyle}
 {
@@ -149,13 +154,92 @@ backgroundcolor=\color{white},
 
 \usepackage{listings} % To use source code
 \definecolor{dkgreen}{rgb}{0,0.6,0} % Color for using code
-\definecolor{gray}{rgb}{0.5,0.5,0.5} 
 % Language to use
 
+%%%%%%%% glossaries %%%%%%%%%%%%
+\makeglossaries
+\newacronym{usth}{USTH}{University of Science and Technology of Hanoi}
+
+\newacronym{vast}{VAST}{Vietnam Academy of Science and Technology}
+\newacronym{api}{API}{application programming interface}
+\newacronym{db}{DB}{database}
+\newacronym{dbms}{DBMS}{database managment system}
+\newacronym{http}{HTTP}{Hypertext Transfer Protocol}
+
+\newacronym{sql}{SQL}{structured query language}
+
+\newacronym{jdbc}{JDBC}{Java Database Connectivity}
+
+\newacronym{json}{JSON}{JavaScript Object Notation}
+\newacronym{acl}{ACL}{Access Control List}
+\newacronym{rbac}{RBAC}{Role-Based Access Control}
+
+\newglossaryentry{classDiagram}
+{
+    name=Application package,
+    description={A collection of programs or modules that is directed at some generic  application and can be tailored (perhaps with some additions) to the needs of a specific instance of that application.}
+}
+\newglossaryentry{boundary}
+{
+    name=Boundary class,
+    description={a class that is the boundary of the system and other system or user (which is actor in the use case diagram).}
+}
+\newglossaryentry{control}
+{
+    name=Control class,
+    description={A control class manages the flow of interaction of the scenario. A control class to achieves use cases in the use case diagram.}
+}
+\newglossaryentry{entity}
+{
+    name=Entity class,
+    description={An entity is a long-lived, passive class that is responsible for some meaningful 
+chunk of information. that class has data.}
+}
+
+\newglossaryentry{sequence}
+{
+    name=Sequence diagram,
+    description={an interaction diagram that shows how processes operate with one another and in what order, and shows object interactions arrange in time sequence.}
+}
+
+\newglossaryentry{briefDesc}
+{
+    name=Brief Description,
+    description={The models of discourse along with exposition, argumentation and narration about summary, meaning, role of Use Cases.}
+}
+
+\newglossaryentry{flow}
+{
+    name=Flow of Events,
+    description={The set of actions ordered to perform a Use Case in the system.}
+}
+
+\newglossaryentry{basicFlow}
+{
+    name=Basic flow,
+    description={The set of required actions to perform Use Case in the system.}
+}
+\newglossaryentry{altFlow}
+{
+    name=Alternative flow,
+    description={Actions that are not compulsory for the Use Case but they are necessary to 
+get all provided function of system.}
+}
+
+\newglossaryentry{preCon}
+{
+    name=Pre-Condition,
+    description={a statement or set of statements that outline a condition that should be true, 
+or conditions that should be true, when the operation is called. The operation is not guaranteed to perform as it should unless the pre-conditions have been met.}
+}
+
+\newglossaryentry{postCon}
+{
+    name=Post-Condition,
+    description={a statement or statements describing the condition that will be true when the operation has completed its task. If the operation is correct and the pre-condition(s) met, then the post-condition is guaranteed to be true.}
+}
+
 \title{Degree project}
-
-
-% \input{chapters/glosaries.tex}
 
 %%%%%%%% Preamble ends %%%%%%%%%%%%
 
@@ -165,16 +249,14 @@ backgroundcolor=\color{white},
 
 \thispagestyle{firststyle}
 \begin{center}
+  \textsc{\Large University of Science and Technology of Hanoi}
+  \vspace*{-3cm}
   \begin{minipage}{0.48\textwidth} 
     \begin{center}
         \includegraphics[scale = 0.2]{images/usth_logo.png}
     \end{center}
   \end{minipage}
-  \vspace*{-3cm}
-
   \vspace*{1cm}
-
-  \textsc{\Large University of Science and Technology of Hanoi}\\[1.5cm]
 
   \begin{minipage}{0.9\textwidth} 
     \begin{center}
@@ -188,20 +270,16 @@ backgroundcolor=\color{white},
 
   \vspace*{0.5cm}
   { \large 
-    \emph{Authors:} \\	
+    \emph{Author:} \\	
       {Nguyen Phuong Thao} \\
       {USTHBI9-212} \\
     \vspace*{1.5cm}
     \emph{Supervisor:} \\													
       Dr. TRAN Giang Son, USTH ICT Lab \\
   }
-  
-%   \vspace{1cm}
-%     Requirement for obtaining the degree of [Information Technology Engineer/Mathematician].	\\	
 
   \begin{center}
-    %{Urcuquí - \today}
-    {Hanoi - July, 2021}
+    {Hanoi - July 2021}
   \end{center}
   
 \end{center}
@@ -215,16 +293,11 @@ backgroundcolor=\color{white},
 \label{chap:acknowledgments}
 \input{chapters/acknowledgments.tex}
 
-\chapter{Abstract}
-\label{chap:abstract}
-\input{chapters/abstract.tex}
-
 \tableofcontents 
-
-% \input{chapters/glosaries.tex}
-
 \listoftables
-\listoffigures
+% \listoffigures
+\startlist[main]{lof}% starts main list of figures
+\printlist[main]{lof}{}{\chapter*{List of Figures}}%prints main list of figures
 
 
 \mainmatter
@@ -233,17 +306,13 @@ backgroundcolor=\color{white},
 \label{chap:intro}
 \input{chapters/introduction.tex}
 
-\chapter{Theoretical Framework}
-\label{chap:theory}
-\input{chapters/fundamentals.tex}
+\chapter{Objectives}
+\label{chap:object}
+\input{chapters/objectives.tex}
 
-\chapter{State of the Art}
-\label{chap:state_of_art}
-\input{chapters/state_of_art.tex}
-
-%\chapter{Problem Setting}
-%label{chap:problem_setting}
-%\input{chapters/problem_setting.tex}
+\chapter{Requirement Analysis}
+\label{chap:requirement_analysis}
+\input{chapters/requirement_analysis.tex}
 
 \chapter{Methodology}
 \label{chap:methods}
@@ -253,29 +322,35 @@ backgroundcolor=\color{white},
 \label{chap:results}
 \input{chapters/results.tex}
 
-
 %\chapter{Discussion}
 %\label{chap:results}
 %\input{chapters/discussion.tex}
-
 
 \chapter{Conclusions}
 \label{chap:conclusions}
 \input{chapters/conclusions.tex}
 
 
-
-
 %%%%%%% Bibliography %%%%%%%%
+\printglossary
+\printglossary[type=\acronymtype]
+\glsaddallunused
+
 \bibliographystyle{bst/IEEEtran} 
 \bibliography{bib/IEEEreferences} 
+% \addbibresource{references.bib}
+% \printbibliography
+
 %%%%%%% Bibliography %%%%%%%%    
 
 \appendix  
 \clearpage % o \cleardoublepage
 \addappheadtotoc 
 \appendixpage 
-
+\stoplist[main]{lof}% stops main list of figures
+\startlist[appendix]{lof}% starts list of figures in appendices
+\printlist[appendix]{lof}{}{\chapter*{List of Figures in Appendices}}% prints list of figures in appendices
+\clearpage
 \input{chapters/appendix.tex}
 
 

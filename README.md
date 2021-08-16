@@ -1,7 +1,15 @@
-This project is my Bachelor Thesis for USTH. 
 
-Topic name: Development Data Lake APIs and Dashboard. 
+This project is a template to write down the Graduation Project at Yachay Tech University.
 
-Supervisor: Dr. TRAN Giang Son, USTH ICT Lab.
+People that collaborated to create this template:
+Israel Pineda
+Rigoberto Fonseca
+Marcelo Barba
+Oscar Guarnizo
+Fenando Zhapa
 
-Template link: [Overleaf](https://www.overleaf.com/latex/templates/yachay-tech-university-undergraduate-thesis-template/ncwznrwcnksp)
+TODO List.
+
+1) White pages should not have headers (Ex: pages 2 and ii)
+2) Remove unnecessary dot from the name of the Appendix
+3) Remove compilation warnings.

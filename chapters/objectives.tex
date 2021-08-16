@@ -1,0 +1,110 @@
+%---------------------------------------------------------
+In this segment, we will define the standard requirements of the project, provide a brief overview of the function of the system and the reasons for its development.
+\section{Desired Features}
+The main goal of this project is to develop a Data Lake APIs and dashboard with basic services: 
+\begin{itemize}
+    \item \textbf{FEATURE 1: Authenticate}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 1.1: Register}: allow users to create a new account
+        \item \textbf{SUB-FEATURE 1.2: Login}: allow users to access into the system.
+    \end{itemize}
+    
+    \item \textbf{FEATURE 2: Manage Users}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 2.1: Create User}: allow Admin to create an account
+        \item \textbf{SUB-FEATURE 2.2: View User}: 
+            \begin{itemize}
+                \item Allow Admin to get a list of all users in the system, filter users by their metadata, export users data to a CSV file
+                \item Allow (Regular) User to view their own profile
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 2.3: Update User}: 
+            \begin{itemize}
+                \item Allow Admin to edit users' information
+                \item (Regular) User to update their own profile
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 2.4: Delete User}: allow Admin to delete an account     
+    \end{itemize}
+    
+    \item \textbf{FEATURE 3: Manage User Groups}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 3.1: Create Group}: allow Admin to create a group
+        \item \textbf{SUB-FEATURE 3.2: View Group}: allow Admin to get a list of all groups in the system, filter groups by their metadata, export groups data to a CSV file
+        \item \textbf{SUB-FEATURE 3.3: Update Group}: allow Admin to add a user to a group
+        \item \textbf{SUB-FEATURE 3.4: Delete Group}: allow Admin to delete a group
+    \end{itemize}
+    
+    \item \textbf{FEATURE 4: Manage Folders}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 4.1: Create Folder}: allow users to create a folder
+        \item \textbf{SUB-FEATURE 4.2: View Folder}: 
+            \begin{itemize}
+                \item Admin can view all folders
+                \item A (regular) User could only access folders they have permission to read
+                \item Users can filter folders by their metadata, and export folders data to a CSV file
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 4.3: Edit Folder}: 
+            \begin{itemize}
+                \item Admin can edit all folders
+                \item A (regular) User could only edit folders they have permission to write
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 4.4: Add a sub-folder to a folder}: 
+        \begin{itemize}
+            \item Admin can add all sub-folders to all folders
+            \item A (regular) User could only add a sub-folder to a folder they have permission to write
+        \end{itemize}
+        \item \textbf{SUB-FEATURE 4.5: Delete Folder}:
+            \begin{itemize}
+                \item Admin can delete all folders
+                \item A (regular) User could only delete folders they have permission to write
+            \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{FEATURE 5: Manage Files}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 5.1: Create File}: allow users to create a file
+        \item \textbf{SUB-FEATURE 5.2: View File}: 
+            \begin{itemize}
+                \item Admin can view all files
+                \item A (regular) User could only access files they have permission to read
+                \item Users can filter files by their metadata, and export folders data to a CSV file
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 5.3: Update File}: 
+            \begin{itemize}
+                \item Admin can edit all files
+                \item A (regular) User could only edit files they have permission to write
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 5.4: Add a file to a folder}: 
+            \begin{itemize}
+                \item Admin can add all files to all folders
+                \item A (regular) User could only add files to folders they have permission to write
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 5.5: Download File}: 
+            \begin{itemize}
+                \item Admin can add download all files
+                \item A (regular) User could only download files they have permission to read
+            \end{itemize}
+        \item \textbf{SUB-FEATURE 5.6: Delete File}:
+            \begin{itemize}
+                \item Admin can delete all files
+                \item A (regular) User could only delete files they have permission to write
+            \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{FEATURE 6: Manage ACLs}
+    \begin{itemize}
+        \item \textbf{SUB-FEATURE 6.1: Grant ACL}: allow users to grant ACL (permission to read or write) to a user or a group for a file or folder
+        \item \textbf{SUB-FEATURE 6.2: View ACL}: allow users to view all ACL (permission to read or write) of all folders or files they have access to; users could also search in ACL sources, filter ACLs based on their metadata, and export ACL data to a CSV file
+        \item \textbf{SUB-FEATURE 6.3: Delete ACL}: allow users to remove ACL (permission to read or write) of a user or a group in a file or folder
+    \end{itemize}
+\end{itemize}
+\section{Expected Outcome}
+The system aims to create a Data Lake for all uses and storage of USTH and beyond the university. The specific goals include:
+\begin{itemize}
+    \item Develop a backend application that has all the desired features discussed and connected to the Data Lake Core
+    \item Develop a web interface with interactions between users and the system
+    \item The web page should be able to run in multiple browsers such as Chrome, Firefox, Safari 
+\end{itemize}
+
+%---------------------------------------------------------
+
+%\section{Justification}

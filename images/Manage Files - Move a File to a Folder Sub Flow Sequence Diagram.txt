@@ -1,0 +1,24 @@
+title Manage Files - Move a File to a Folder Sub Flow Sequence Diagram
+
+actor User
+boundary ManageFiles
+control FileController
+entity File
+
+User -> ManageFiles: 6. request move file()
+alt The actor doesn't have the write permission
+ManageFiles-->>User: error message
+else 
+ManageFiles-->>User: request form
+end
+User->ManageFiles:7. enter information()
+ManageFiles->ManageFiles:7.1 retrieve file details (id)
+alt File existed
+ManageFiles-->>User: file details
+User->ManageFiles:8. move file (information)
+ManageFiles->FileController:8.1 move file (information)
+FileController->File: 8.1.1 move (information)
+else File not existed
+ManageFiles-->>User: error message
+end
+
